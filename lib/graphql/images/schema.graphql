@@ -1,0 +1,8 @@
+type Image {
+  imgUrl: String
+  tags: [String]
+}
+
+type Query {
+  images(tags: [String]): [Image]!
+}

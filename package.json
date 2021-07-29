@@ -1,0 +1,29 @@
+{
+  "name": "rrdig-api",
+  "version": "1.0.0",
+  "description": "GraphQL endpoint for Rob's Razzle Dazzle Image Gallery",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --inspect server.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Robert Lombardo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@hapi/boom": "^9.1.1",
+    "apollo-server": "^2.25.2",
+    "aws-sdk": "^2.842.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^7.0.5",
+    "promise-throw": "0.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "nodemonConfig": {
+    "ext": "js graphql"
+  }
+}
