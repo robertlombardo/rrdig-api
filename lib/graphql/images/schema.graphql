@@ -6,3 +6,10 @@ type Image {
 type Query {
   images(tags: [String]): [Image]!
 }
+
+type Mutation {
+  uploadImage(
+    file: Upload!
+    tags: [String!]!
+  ): File!
+}
