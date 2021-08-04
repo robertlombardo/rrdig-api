@@ -6,14 +6,27 @@ This is an [Apollo](https://www.apollographql.com/) server.
 
 ```bash
 git clone https://github.com/robertlombardo/rrdig-api
+cd rrdig-api
 ```
 
 ### Running the Dev Server
 
-([NodeJS](https://nodejs.org/) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are required)
+##### .env file
+A local API instance will have to be configured to connect with a live S3-compatible endpoint. Add an .env file with these vars:
 
 ```bash
-cd rrdig-api
+# .env
+S3_ENDPOINT=example.s3host.com
+S3_REGION=example_region
+S3_ACCESS_KEY=XXXXXXXXXXXXXXXXX
+S3_SECRET_KEY=XXXXXXXXXXXXXXXXX
+
+```
+
+
+([NodeJS](https://nodejs.org/) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) are required for installing dependencies & starting the server...)
+
+```bash
 npm install
 npm run dev
 ```
