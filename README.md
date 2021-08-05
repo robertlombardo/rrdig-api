@@ -20,7 +20,7 @@ S3_ENDPOINT=example.s3host.com
 S3_REGION=example_region
 S3_ACCESS_KEY=XXXXXXXXXXXXXXXXX
 S3_SECRET_KEY=XXXXXXXXXXXXXXXXX
-
+S3_BUCKET=example_bucket_name
 ```
 
 
